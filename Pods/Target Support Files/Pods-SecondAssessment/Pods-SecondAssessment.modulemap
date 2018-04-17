@@ -1,0 +1,6 @@
+framework module Pods_SecondAssessment {
+  umbrella header "Pods-SecondAssessment-umbrella.h"
+
+  export *
+  module * { export * }
+}
