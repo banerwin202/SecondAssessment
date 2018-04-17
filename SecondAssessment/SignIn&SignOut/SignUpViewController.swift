@@ -20,6 +20,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     var ageString: String = ""
     var genderString: String = ""
     var emailString: String = ""
+    var descriptionString: String = ""
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -69,8 +70,11 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
             ageTextField.text = ageString
             genderTextField.text = genderString
             emailTextField.text = emailString
+            descriptionTextField.text = descriptionString
+            
+            setUpBorderView()
         }
-        
+    
     }
     
     //Disables Create Button if info are not filled up
@@ -208,6 +212,11 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         if let image = self.profileImageView.image {
             self.uploadToStorage(image)
         }
+    }
+    
+    func setUpBorderView() {
+        descriptionTextField.layer.borderWidth = 1
+        descriptionTextField.layer.borderColor = UIColor.black.cgColor
     }
     
 }

@@ -13,11 +13,11 @@ import FirebaseAuth
 class MatchedProfilesViewController: UIViewController {
     
     var ref: DatabaseReference!
-    var matchedProfiles : [MatchedProfiles] = []
+    var matchedProfiles : [Profiles] = []
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-//            tableView.delegate = self
+            tableView.delegate = self
             tableView.dataSource = self
         }
     }
@@ -34,9 +34,9 @@ class MatchedProfilesViewController: UIViewController {
         guard let currentUserUID = Auth.auth().currentUser?.uid else {return}
         
         ref.child("UserMatch").child(currentUserUID).observe(.childAdded) { (snapshot) in
-            self.ref.child("UserMatch").child(snapshot.key).observeSingleEvent(of: .value, with: { (dataSnapshot) in
+            self.ref.child("User").child(snapshot.key).observeSingleEvent(of: .value, with: { (dataSnapshot) in
                 guard let userDict = dataSnapshot.value as? [String:Any] else {return}
-                let matchedUser = MatchedProfiles(uid: currentUserUID, dict: userDict)
+                let matchedUser = Profiles(uid: currentUserUID, dict: userDict)
                 
                 DispatchQueue.main.async {
                     self.matchedProfiles.append(matchedUser)
@@ -74,6 +74,7 @@ extension MatchedProfilesViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return matchedProfiles.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,8 +92,16 @@ extension MatchedProfilesViewController : UITableViewDataSource {
     }
 }
 
-//extension MatchedProfilesViewController : UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-//}
+extension MatchedProfilesViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         guard let vc = storyboard?.instantiateViewController(withIdentifier: "MatchedCandidateDetailScreenViewController") as? MatchedCandidateDetailScreenViewController else {return}
+        
+        let matchedUser = matchedProfiles[indexPath.row]
+        
+        vc.selectedMatchedProfiles = matchedUser
+        
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}

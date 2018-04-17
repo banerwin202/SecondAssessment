@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MatchedProfiles {
+class Profiles {
     var uid : String = ""
     var name : String = ""
     var age : String = ""

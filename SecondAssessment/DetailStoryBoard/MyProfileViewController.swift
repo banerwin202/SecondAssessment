@@ -16,6 +16,8 @@ class MyProfileViewController: UIViewController {
     @IBOutlet weak var LBLAge: UILabel!
     @IBOutlet weak var LBLGender: UILabel!
     @IBOutlet weak var LBLEmail: UILabel!
+    @IBOutlet weak var LBLDescription: UILabel!
+    
     
     @IBOutlet weak var profileImageView: UIImageView!
     
@@ -42,6 +44,7 @@ class MyProfileViewController: UIViewController {
             self.LBLAge.text = userDict["Age"] as? String ?? ""
             self.LBLEmail.text = userDict["Email"] as? String ?? ""
             self.LBLGender.text = userDict["Gender"] as? String ?? ""
+            self.LBLDescription.text = userDict["Description"] as? String ?? ""
             
             self.getImage(profilePicURL, self.profileImageView)
         }
@@ -56,6 +59,7 @@ class MyProfileViewController: UIViewController {
         vc.ageString = LBLAge.text!
         vc.genderString = LBLGender.text!
         vc.emailString = LBLEmail.text!
+        vc.descriptionString = LBLDescription.text!
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

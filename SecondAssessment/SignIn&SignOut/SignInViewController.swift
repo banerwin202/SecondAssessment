@@ -100,7 +100,7 @@ class LoginViewController: UIViewController {
                                 if user != nil {
                                     self.loginTextField.text = ""
                                     self.passwordTextField.text = ""
-                                    //                                    let sb = UIStoryboard(name: "HospitalDetail", bundle: Bundle.main)
+                                
                                     guard let navVC = self.storyboard?.instantiateViewController(withIdentifier: "userTabBarController") as? UITabBarController else {return}
                                     self.present(navVC, animated: true, completion: nil)
                                     
