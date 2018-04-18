@@ -22,6 +22,9 @@ class MatchedCandidateDetailScreenViewController: UIViewController {
     @IBOutlet weak var LBLEmail: UILabel!
     @IBOutlet weak var LBLDescription: UILabel!
     
+    @IBAction func unMatchBtnTapped(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()

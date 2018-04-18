@@ -17,6 +17,12 @@ class Profiles {
     var description : String = ""
     var profileImageURL : String = ""
     
+    init(dict:[String:Any]) {
+        self.name = dict["Name"] as? String ?? "No Name"
+        self.age = dict["Age"] as? String ?? "No Age"
+        self.profileImageURL = dict["profilePicURL"] as? String ?? "No ProfilePicURL"
+    }
+    
     init() {
         
     }

@@ -7,41 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA71347E207FA34A006E02E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71347D207FA34A006E02E1 /* AppDelegate.swift */; };
-		AA713480207FA34A006E02E1 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71347F207FA34A006E02E1 /* MyProfileViewController.swift */; };
-		AA713483207FA34A006E02E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA713481207FA34A006E02E1 /* Main.storyboard */; };
-		AA713488207FA34B006E02E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA713486207FA34B006E02E1 /* LaunchScreen.storyboard */; };
-		AA713490207FA4DD006E02E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA71348F207FA4DD006E02E1 /* GoogleService-Info.plist */; };
-		AA713493207FA6D2006E02E1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA713492207FA6D2006E02E1 /* SignInViewController.swift */; };
-		AA713495207FA6DF006E02E1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA713494207FA6DF006E02E1 /* SignUpViewController.swift */; };
-		AA713498207FA813006E02E1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA713497207FA813006E02E1 /* Alert.swift */; };
-		AAE2BF022081EE6F00CA5723 /* MatchedProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BF012081EE6F00CA5723 /* MatchedProfilesViewController.swift */; };
-		AAE2BF042081EED600CA5723 /* MatchedProfilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BF032081EED600CA5723 /* MatchedProfilesTableViewCell.swift */; };
-		AAE2BF062081F07D00CA5723 /* Profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BF052081F07D00CA5723 /* Profiles.swift */; };
-		AAE2BF082082107E00CA5723 /* MatchCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2BF072082107E00CA5723 /* MatchCandidateViewController.swift */; };
-		AAE4311A20836A9800E77942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE4311920836A9800E77942 /* Assets.xcassets */; };
-		AAE4311C20839AA400E77942 /* MatchedCandidateDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4311B20839AA400E77942 /* MatchedCandidateDetailScreenViewController.swift */; };
+		AAA06770208640EE00126403 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA0675C208640EE00126403 /* SignUpViewController.swift */; };
+		AAA06771208640EE00126403 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA0675D208640EE00126403 /* SignInViewController.swift */; };
+		AAA06772208640EE00126403 /* MatchedProfilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA0675F208640EE00126403 /* MatchedProfilesTableViewCell.swift */; };
+		AAA06773208640EE00126403 /* MatchedCandidateDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06760208640EE00126403 /* MatchedCandidateDetailScreenViewController.swift */; };
+		AAA06774208640EE00126403 /* MatchCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06761208640EE00126403 /* MatchCandidateViewController.swift */; };
+		AAA06775208640EE00126403 /* MatchedProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06762208640EE00126403 /* MatchedProfilesViewController.swift */; };
+		AAA06776208640EE00126403 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06763208640EE00126403 /* MyProfileViewController.swift */; };
+		AAA06777208640EE00126403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA06764208640EE00126403 /* Assets.xcassets */; };
+		AAA06778208640EE00126403 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06766208640EE00126403 /* Alert.swift */; };
+		AAA06779208640EE00126403 /* Profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA06767208640EE00126403 /* Profiles.swift */; };
+		AAA0677A208640EE00126403 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA06768208640EE00126403 /* GoogleService-Info.plist */; };
+		AAA0677B208640EE00126403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA06769208640EE00126403 /* LaunchScreen.storyboard */; };
+		AAA0677C208640EE00126403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA0676B208640EE00126403 /* Main.storyboard */; };
+		AAA0677D208640EE00126403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA0676D208640EE00126403 /* AppDelegate.swift */; };
+		AAA0677E208640EE00126403 /* TinderLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAA0676E208640EE00126403 /* TinderLogo.jpg */; };
+		AAA0677F208640EE00126403 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA0676F208640EE00126403 /* Info.plist */; };
 		BB44D77B93A7DEE3F4D419AE /* Pods_SecondAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B8AFB6579C6AAD153ADA60 /* Pods_SecondAssessment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41B8AFB6579C6AAD153ADA60 /* Pods_SecondAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA71347A207FA34A006E02E1 /* SecondAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA71347D207FA34A006E02E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA71347F207FA34A006E02E1 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
-		AA713482207FA34A006E02E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA713487207FA34B006E02E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AA713489207FA34B006E02E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA71348F207FA4DD006E02E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AA713492207FA6D2006E02E1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		AA713494207FA6DF006E02E1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		AA713497207FA813006E02E1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		AAE2BF012081EE6F00CA5723 /* MatchedProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedProfilesViewController.swift; sourceTree = "<group>"; };
-		AAE2BF032081EED600CA5723 /* MatchedProfilesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedProfilesTableViewCell.swift; sourceTree = "<group>"; };
-		AAE2BF052081F07D00CA5723 /* Profiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profiles.swift; sourceTree = "<group>"; };
-		AAE2BF072082107E00CA5723 /* MatchCandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCandidateViewController.swift; sourceTree = "<group>"; };
-		AAE4311920836A9800E77942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AAE4311B20839AA400E77942 /* MatchedCandidateDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedCandidateDetailScreenViewController.swift; sourceTree = "<group>"; };
+		AAA0675C208640EE00126403 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AAA0675D208640EE00126403 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AAA0675F208640EE00126403 /* MatchedProfilesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedProfilesTableViewCell.swift; sourceTree = "<group>"; };
+		AAA06760208640EE00126403 /* MatchedCandidateDetailScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedCandidateDetailScreenViewController.swift; sourceTree = "<group>"; };
+		AAA06761208640EE00126403 /* MatchCandidateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCandidateViewController.swift; sourceTree = "<group>"; };
+		AAA06762208640EE00126403 /* MatchedProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedProfilesViewController.swift; sourceTree = "<group>"; };
+		AAA06763208640EE00126403 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		AAA06764208640EE00126403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAA06766208640EE00126403 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		AAA06767208640EE00126403 /* Profiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiles.swift; sourceTree = "<group>"; };
+		AAA06768208640EE00126403 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAA0676A208640EE00126403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAA0676C208640EE00126403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAA0676D208640EE00126403 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAA0676E208640EE00126403 /* TinderLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TinderLogo.jpg; sourceTree = "<group>"; };
+		AAA0676F208640EE00126403 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39D20819D9B6A66DA848EAD /* Pods-SecondAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondAssessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecondAssessment/Pods-SecondAssessment.release.xcconfig"; sourceTree = "<group>"; };
 		B5EEEC2670F83BD230538115 /* Pods-SecondAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondAssessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondAssessment/Pods-SecondAssessment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +81,7 @@
 		AA713471207FA34A006E02E1 = {
 			isa = PBXGroup;
 			children = (
-				AA71347C207FA34A006E02E1 /* SecondAssessment */,
+				AAA0675A208640EE00126403 /* SecondAssessment */,
 				AA71347B207FA34A006E02E1 /* Products */,
 				44211627843A127E4806E337 /* Pods */,
 				A009D042A9A00F3DA1834456 /* Frameworks */,
@@ -93,50 +96,51 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA71347C207FA34A006E02E1 /* SecondAssessment */ = {
+		AAA0675A208640EE00126403 /* SecondAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				AA713496207FA7FE006E02E1 /* ClassFile */,
-				AA713491207FA6A9006E02E1 /* SignIn&SignOut */,
-				AAE2BF002081D1EA00CA5723 /* DetailStoryBoard */,
-				AA713481207FA34A006E02E1 /* Main.storyboard */,
-				AA71347D207FA34A006E02E1 /* AppDelegate.swift */,
-				AA713486207FA34B006E02E1 /* LaunchScreen.storyboard */,
-				AA713489207FA34B006E02E1 /* Info.plist */,
-				AA71348F207FA4DD006E02E1 /* GoogleService-Info.plist */,
-				AAE4311920836A9800E77942 /* Assets.xcassets */,
+				AAA06765208640EE00126403 /* ClassFile */,
+				AAA0675B208640EE00126403 /* SignIn&SignOut */,
+				AAA0675E208640EE00126403 /* DetailStoryBoard */,
+				AAA06764208640EE00126403 /* Assets.xcassets */,
+				AAA06768208640EE00126403 /* GoogleService-Info.plist */,
+				AAA06769208640EE00126403 /* LaunchScreen.storyboard */,
+				AAA0676B208640EE00126403 /* Main.storyboard */,
+				AAA0676D208640EE00126403 /* AppDelegate.swift */,
+				AAA0676E208640EE00126403 /* TinderLogo.jpg */,
+				AAA0676F208640EE00126403 /* Info.plist */,
 			);
 			path = SecondAssessment;
 			sourceTree = "<group>";
 		};
-		AA713491207FA6A9006E02E1 /* SignIn&SignOut */ = {
+		AAA0675B208640EE00126403 /* SignIn&SignOut */ = {
 			isa = PBXGroup;
 			children = (
-				AA713492207FA6D2006E02E1 /* SignInViewController.swift */,
-				AA713494207FA6DF006E02E1 /* SignUpViewController.swift */,
+				AAA0675C208640EE00126403 /* SignUpViewController.swift */,
+				AAA0675D208640EE00126403 /* SignInViewController.swift */,
 			);
 			path = "SignIn&SignOut";
 			sourceTree = "<group>";
 		};
-		AA713496207FA7FE006E02E1 /* ClassFile */ = {
+		AAA0675E208640EE00126403 /* DetailStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				AA713497207FA813006E02E1 /* Alert.swift */,
-				AAE2BF052081F07D00CA5723 /* Profiles.swift */,
-			);
-			path = ClassFile;
-			sourceTree = "<group>";
-		};
-		AAE2BF002081D1EA00CA5723 /* DetailStoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-				AA71347F207FA34A006E02E1 /* MyProfileViewController.swift */,
-				AAE2BF012081EE6F00CA5723 /* MatchedProfilesViewController.swift */,
-				AAE2BF032081EED600CA5723 /* MatchedProfilesTableViewCell.swift */,
-				AAE2BF072082107E00CA5723 /* MatchCandidateViewController.swift */,
-				AAE4311B20839AA400E77942 /* MatchedCandidateDetailScreenViewController.swift */,
+				AAA06761208640EE00126403 /* MatchCandidateViewController.swift */,
+				AAA06762208640EE00126403 /* MatchedProfilesViewController.swift */,
+				AAA0675F208640EE00126403 /* MatchedProfilesTableViewCell.swift */,
+				AAA06763208640EE00126403 /* MyProfileViewController.swift */,
+				AAA06760208640EE00126403 /* MatchedCandidateDetailScreenViewController.swift */,
 			);
 			path = DetailStoryBoard;
+			sourceTree = "<group>";
+		};
+		AAA06765208640EE00126403 /* ClassFile */ = {
+			isa = PBXGroup;
+			children = (
+				AAA06766208640EE00126403 /* Alert.swift */,
+				AAA06767208640EE00126403 /* Profiles.swift */,
+			);
+			path = ClassFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +204,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA713488207FA34B006E02E1 /* LaunchScreen.storyboard in Resources */,
-				AA713490207FA4DD006E02E1 /* GoogleService-Info.plist in Resources */,
-				AAE4311A20836A9800E77942 /* Assets.xcassets in Resources */,
-				AA713483207FA34A006E02E1 /* Main.storyboard in Resources */,
+				AAA0677B208640EE00126403 /* LaunchScreen.storyboard in Resources */,
+				AAA0677C208640EE00126403 /* Main.storyboard in Resources */,
+				AAA0677E208640EE00126403 /* TinderLogo.jpg in Resources */,
+				AAA0677A208640EE00126403 /* GoogleService-Info.plist in Resources */,
+				AAA0677F208640EE00126403 /* Info.plist in Resources */,
+				AAA06777208640EE00126403 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,36 +280,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA713480207FA34A006E02E1 /* MyProfileViewController.swift in Sources */,
-				AA71347E207FA34A006E02E1 /* AppDelegate.swift in Sources */,
-				AAE2BF062081F07D00CA5723 /* Profiles.swift in Sources */,
-				AA713495207FA6DF006E02E1 /* SignUpViewController.swift in Sources */,
-				AAE4311C20839AA400E77942 /* MatchedCandidateDetailScreenViewController.swift in Sources */,
-				AAE2BF042081EED600CA5723 /* MatchedProfilesTableViewCell.swift in Sources */,
-				AA713498207FA813006E02E1 /* Alert.swift in Sources */,
-				AAE2BF082082107E00CA5723 /* MatchCandidateViewController.swift in Sources */,
-				AA713493207FA6D2006E02E1 /* SignInViewController.swift in Sources */,
-				AAE2BF022081EE6F00CA5723 /* MatchedProfilesViewController.swift in Sources */,
+				AAA06778208640EE00126403 /* Alert.swift in Sources */,
+				AAA06774208640EE00126403 /* MatchCandidateViewController.swift in Sources */,
+				AAA06770208640EE00126403 /* SignUpViewController.swift in Sources */,
+				AAA06772208640EE00126403 /* MatchedProfilesTableViewCell.swift in Sources */,
+				AAA06773208640EE00126403 /* MatchedCandidateDetailScreenViewController.swift in Sources */,
+				AAA06779208640EE00126403 /* Profiles.swift in Sources */,
+				AAA0677D208640EE00126403 /* AppDelegate.swift in Sources */,
+				AAA06771208640EE00126403 /* SignInViewController.swift in Sources */,
+				AAA06776208640EE00126403 /* MyProfileViewController.swift in Sources */,
+				AAA06775208640EE00126403 /* MatchedProfilesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AA713481207FA34A006E02E1 /* Main.storyboard */ = {
+		AAA06769208640EE00126403 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA713482207FA34A006E02E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA713486207FA34B006E02E1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA713487207FA34B006E02E1 /* Base */,
+				AAA0676A208640EE00126403 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AAA0676B208640EE00126403 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA0676C208640EE00126403 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

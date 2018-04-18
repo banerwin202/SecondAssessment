@@ -28,6 +28,7 @@ class MatchedProfilesViewController: UIViewController {
         ref = Database.database().reference()
         observeMatchedProfiles()
     
+        tableView.allowsMultipleSelectionDuringEditing = true
     }
     
     func observeMatchedProfiles() {
@@ -36,7 +37,7 @@ class MatchedProfilesViewController: UIViewController {
         ref.child("UserMatch").child(currentUserUID).observe(.childAdded) { (snapshot) in
             self.ref.child("User").child(snapshot.key).observeSingleEvent(of: .value, with: { (dataSnapshot) in
                 guard let userDict = dataSnapshot.value as? [String:Any] else {return}
-                let matchedUser = Profiles(uid: currentUserUID, dict: userDict)
+                let matchedUser = Profiles(uid: snapshot.key, dict: userDict)
                 
                 DispatchQueue.main.async {
                     self.matchedProfiles.append(matchedUser)
@@ -71,6 +72,27 @@ func renderImage(_ urlString: String, cellImageView: UIImageView) {
 }
 
 extension MatchedProfilesViewController : UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+        let selectedMatchID = self.matchedProfiles[indexPath.row]
+        
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            ref.child("UserMatch").child(currentUserID).child(selectedMatchID.uid).removeValue { (error, deleteMatchUser) in
+                
+                if error != nil {
+                    print("Error In Deleting TableView")
+                }
+                
+                self.matchedProfiles.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return matchedProfiles.count
