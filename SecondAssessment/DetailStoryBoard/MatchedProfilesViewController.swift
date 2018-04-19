@@ -90,6 +90,10 @@ extension MatchedProfilesViewController : UITableViewDataSource {
                 
                 self.matchedProfiles.remove(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
+                
+                //send data about indexpath.row to MatchCandidateViewController for remove Array[indexpath]
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MatchCandidateViewController") as? MatchCandidateViewController else {return}
+                vc.indexpath = indexPath.row
             }
         }
     }

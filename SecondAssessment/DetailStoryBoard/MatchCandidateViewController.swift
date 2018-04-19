@@ -26,6 +26,8 @@ class MatchCandidateViewController: UIViewController {
     var genderAgeMatchCount : Int = 0
     var matchProfileCount   : Int = 0
     
+    var indexpath : Int = 0
+    
     @IBOutlet weak var candidateProfileImage: UIImageView!
     @IBOutlet weak var candidateName: UILabel!
     

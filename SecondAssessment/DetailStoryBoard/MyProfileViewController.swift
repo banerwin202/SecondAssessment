@@ -21,6 +21,15 @@ class MyProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
     
+    @IBAction func logoutBtnTapped(_ sender: Any) {
+        do{
+            try Auth.auth().signOut()
+            guard let navVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? UINavigationController else {return}
+            present(navVC, animated: true, completion: nil)
+        } catch {
+        }
+
+    }
     var ref : DatabaseReference!
     
     override func viewDidLoad() {
